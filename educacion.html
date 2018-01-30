@@ -11,8 +11,9 @@
 	<header> 
 		 <!-- codifiqué una pequeña figura utilizando svg directamente en el html y dibujé otra con la herramienta SVG-edit e inserte el código generado, luego modifiqué los colores -->
 		<svg width="100%" height="10">
-				<rect width="84px" height="8" fill="#42a5f5" stroke="#80d6ff" stroke-width="5px" />
-			</svg>
+			<rect width="84px" height="8" fill="#42a5f5" stroke="#80d6ff" stroke-width="5px" />
+		</svg>	<!-- decoracion pequeña en la parte superior  -->
+
 		<svg width="90" height="67" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
 		 <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
 		 <g stroke="null">
@@ -23,7 +24,7 @@
 		   <text stroke="#000000" fill="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="204.5" y="234.5" id="svg_3" font-size="28" font-family="serif" text-anchor="middle" xml:space="preserve" transform="matrix(2.347025188906629,0,0,1.5859145034430866,-434.362544977669,-325.1478757249152) " font-style="italic">gc</text>
 		  </g>
 		 </g>
-		</svg>
+		</svg>	<!-- Logotipo con iniciales -->
 		
 		<h1>Currículum Vitae</h1>
 		<h2>2. Educación - Geiner Esteban Castro Castro</h2>
@@ -45,121 +46,130 @@
 		<hr>
 	</header>
 
-	<h2 id="personal">Datos personales</h2>
-	<div>
-		<img src="imagen/DSC_0013.jpg" title="Geiner Castro" alt="foto_perfil" width="200px" height="200px">
-	</div>
-	<section>
-		<p>
-			<ul>
-				<li><b>Nombre: </b>Geiner Esteban</li>
-				<li><b>Apellidos: </b>Castro Castro</li>
-				<li><b>Edad: </b>30 años</li>
-				<li><b>Fecha de nacimiento: </b>05/abril/1987</li>
-				<li><b>Lugar de nacimiento: </b>Pérez Zeledón, San José CR</li>
-				<li><b>Nacionalidad: </b>Costarricense</li>
-				<li><b>Estado civil: </b>Casado</li>
-			</ul>
-		</p>
-	</section>
 
-	<!-- tabla con datos de formación educativa -->
-	<article> 
-		<h2>Educación</h2>
-		 <table border="2" cellpadding="4" cellspacing="3">
-		 	<thead>
-		 		<tr>
-		 			<th>Año</th>
-		 			<th>Institución</th>
-		 			<th>Lugar</th>
-		 			<th>¿Culminó?</th>
-		 		</tr>
-		 	</thead>
-		 	<tbody>
-		 		<tr>
-		 			<td>2014</td>
-		 			<td>IPEC Agua Buena</td>
-		 			<td>Coopa Buena, Agua Buena</td>
-		 			<td>Sí</td>
-		 		</tr>
-		 		<tr>
-		 			<td>2012</td>
-		 			<td>INA Sabalito</td>
-		 			<td>Sabalito centro</td>
-		 			<td>Sí</td>
-		 		</tr>
-		 		<tr>
-		 			<td>1999</td>
-		 			<td>Escuela San Antonio</td>
-		 			<td>San Antonio, Sabalito</td>
-		 			<td>Sí</td>
-		 		</tr>
-		 	</tbody>
-		 </table>
-	</article>
-
-	<!-- formulario para agregar estudios adicionales -->
 	<article>
 
-		<h3>Agregar estudios</h3>
-		<form action="">
+		<h2 id="personal">Datos personales</h2>
+		<div>
+			<img src="imagen/DSC_0013.jpg" title="Geiner Castro" alt="foto_perfil" width="200px" height="200px" border="1">
+		</div>
 
-			<label for="ano">Año :</label>
-			<select name="ano" id="ano">
-				<option value="2008">2008</option> <!-- no se si value es requerido en este caso -->
-				<option value="2009">2009</option>
-				<option value="2010">2010</option>
-				<option value="2011">2011</option>
-				<option value="2012">2012</option>
-				<option value="2013">2013</option>
-				<option value="2014">2014</option>
-				<option value="2015">2015</option>
-				<option value="2016">2016</option>
-				<option value="2017">2017</option>
-				<option value="2018">2018</option> <!-- quise que 2018 saliera por default pero no supe como, intente remover el atributo value a todos los demas años pero no funciono -->
-			</select>
+		<section>
+			<p>
+				<ul>
+					<li><b>Nombre: </b>Geiner Esteban</li>
+					<li><b>Apellidos: </b>Castro Castro</li>
+					<li><b>Edad: </b>30 años</li>
+					<li><b>Fecha de nacimiento: </b>05/abril/1987</li>
+					<li><b>Lugar de nacimiento: </b>Pérez Zeledón, San José CR</li>
+					<li><b>Nacionalidad: </b>Costarricense</li>
+					<li><b>Estado civil: </b>Casado</li>
+				</ul>
+			</p>
+		</section>
 
-			<br><br>
+		<!-- tabla con datos de formación educativa -->
+		<section> 
+			<h2>Educación</h2>
+			<table border="2" cellpadding="4" cellspacing="3">
+			 	<thead>
+			 		<tr>
+			 			<th>Año</th>
+			 			<th>Institución</th>
+			 			<th>Lugar</th>
+			 			<th>¿Culminó?</th>
+			 		</tr>
+			 	</thead>
+			 	<tbody>
+			 		<tr>
+			 			<td>2014</td>
+			 			<td>IPEC Agua Buena</td>
+			 			<td>Coopa Buena, Agua Buena</td>
+			 			<td>Sí</td>
+			 		</tr>
+			 		<tr>
+			 			<td>2012</td>
+			 			<td>INA Sabalito</td>
+			 			<td>Sabalito centro</td>
+			 			<td>Sí</td>
+			 		</tr>
+			 		<tr>
+			 			<td>1999</td>
+			 			<td>Escuela San Antonio</td>
+			 			<td>San Antonio, Sabalito</td>
+			 			<td>Sí</td>
+			 		</tr>
+			 	</tbody>
+			 </table>
+		</section>
 
-			<label for="institucion">Institución :</label>
-			<input type="text" name="institucion" id="institucion" required>
+		<!-- formulario para agregar estudios adicionales -->
+		<section>
 
-			<br><br>
+			<h3>Agregar estudios</h3>
+			<form action="">
 
-			<label for="lugar">Lugar :</label>
-			<br>
-			<textarea name="lugar" id="lugar" cols="33" rows="3" placeholder="indique la dirección..."></textarea>
+				<label for="anio">Año :</label>
+				<select name="anio" id="anio">
+					<option value="2008">2008</option> <!-- no se si value es requerido en este caso -->
+					<option value="2009">2009</option>
+					<option value="2010">2010</option>
+					<option value="2011">2011</option>
+					<option value="2012">2012</option>
+					<option value="2013">2013</option>
+					<option value="2014">2014</option>
+					<option value="2015">2015</option>
+					<option value="2016">2016</option>
+					<option value="2017">2017</option>
+					<option value="2018">2018</option> <!-- quise que 2018 saliera por default pero no supe como, intente remover el atributo value a todos los demas años pero no funciono -->
+				</select>
 
-			<br><br>
-				<!-- radio buttons sigue siendo dificil de entender -->
-			<label for="culm">¿Culminó? :</label>
-			<input type="radio" name="culm" id="si">
-			<label for="si" name="culm">Sí</label>
-			<input type="radio" name="culm" id="no">
-			<label for="no" name="culm">No</label>
+				<br><br>
 
-			<br><br>
+				<label for="institucion">Institución :</label>
+				<input type="text" name="institucion" id="institucion" required>
 
-			<input type="submit" value="Enviar">
+				<br><br>
+
+				<label for="lugar">Lugar :</label>
+				<br>
+				<textarea name="lugar" id="lugar" cols="33" rows="3" placeholder="indique la dirección..."></textarea>
+
+				<br><br>
+					<!-- radio buttons  -->
+				<label for="culm">¿Culminó? :</label>
+				<input type="radio" name="culm" id="si">
+				<label for="si" name="culm">Sí</label>
+				<input type="radio" name="culm" id="no">
+				<label for="no" name="culm">No</label>
+
+				<br><br>
+
+				<input type="submit" value="Enviar">
 
 
-		</form>
+			</form>
+		</section>
+		
 	</article>
-	
+
+
 	<footer>
+		<hr>
 		<h3>Contacto</h3>
 		<p>
 			<ul>
 				<li>E-mail: <a href="mailto:castro60802@gmail.com?subject=Feedback">castro60802@gmail.com</a></li>
 				<li>Teléfono: 8433-4791</li>
 				<li><a href="https://www.facebook.com/geiner.castro.92372" target="_blank">FACEBOOK</a></li>
+				<li><a href="https://github.com/cr-geiner" target="_blank">GitHub</a></li>
 				<li>Dirección: San Rafael, Heredia CR</li>
 			</ul><span>Derechos reservados &copy; </span>
 		</p>
 		<a href="#personal">Regresar al inicio</a><br>
 		<svg width="100%" height="15">
-				<rect width="95%" height="12" fill="#42a5f5" stroke="#80d6ff" stroke-width="5px" />
-			</svg>
+			<rect width="95%" height="12" fill="#42a5f5" stroke="#80d6ff" stroke-width="5px" />
+		</svg>
 	</footer>
 	
 </body>
