@@ -8,11 +8,13 @@
 </head>
 <body> 
 
-	<header> 
+	<header> 		<!-- Aquí inicia el encabezado lo mi página -->
+
 		 <!-- codifiqué una pequeña figura utilizando svg directamente en el html y dibujé otra con la herramienta SVG-edit e inserte el código generado, luego modifiqué los colores -->
 		<svg width="100%" height="10">
 			<rect width="84px" height="8" fill="#42a5f5" stroke="#80d6ff" stroke-width="5px" />
 		</svg>	<!-- decoracion pequeña en la parte superior  -->
+
 
 		<svg width="90" height="67" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
 		 <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
@@ -25,12 +27,13 @@
 		  </g>
 		 </g>
 		</svg>	<!-- Logotipo con iniciales -->
+
 		
 		<h1>Currículum Vitae</h1>
 		<h2>Geiner Esteban Castro Castro</h2>
 		
 		
-		<nav>
+		<nav>  <!-- menu de navegacion -->
 			<ol>
 				<li>
 					<a href="./index.html">Información personal</a>
@@ -43,36 +46,34 @@
 				</li>
 			</ol>
 		</nav>
+
+
 		<h3>2. Educación</h3>
 		<hr>
 	</header>
 
+		<!-- 
+		**De acuerdo al "template", cada una de las 3 páginas trae 
+		la foto y toda la información personal. 
+		Yo decidí que la información personal es pertinente a la 
+		primera página que es dedicada a ello, y decidí removerla 
+		de la versión final (de "educacion" y "experiencia") para 
+		mantener un aspecto mas ordenado y que cada página se 
+		dedique a los objetivos solicitados, tambien por que así 
+		se asemeja a el video del ejemplo** 
+		-->
+
+
 
 	<section>
 
-		<h2 id="personal">Datos personales</h2>
-		<div>
-			<img src="imagen/DSC_0013.jpg" title="Geiner Castro" alt="foto_perfil" width="200px" height="200px" border="1">
-		</div>
-
 		
-			<p>
-				<ul>
-					<li><b>Nombre: </b>Geiner Esteban</li>
-					<li><b>Apellidos: </b>Castro Castro</li>
-					<li><b>Edad: </b>30 años</li>
-					<li><b>Fecha de nacimiento: </b>05/abril/1987</li>
-					<li><b>Lugar de nacimiento: </b>Pérez Zeledón, San José CR</li>
-					<li><b>Nacionalidad: </b>Costarricense</li>
-					<li><b>Estado civil: </b>Casado</li>
-				</ul>
-			</p>
-		
-
 		<!-- tabla con datos de formación educativa -->
+
 		<article>
 
 			<h2>Educación</h2>
+
 			<table border="2" cellpadding="4" cellspacing="3">
 			 	<thead>
 			 		<tr>
@@ -102,13 +103,17 @@
 			 			<td>Sí</td>
 			 		</tr>
 			 	</tbody>
-			 </table>
+			</table>
 		
+		</article>
+
 
 		<!-- formulario para agregar estudios adicionales -->
 		
+		<article>
 
 			<h3>Agregar estudios</h3>
+
 			<form action="">
 
 				<label for="anio">Año :</label>
@@ -138,6 +143,7 @@
 				<textarea name="lugar" id="lugar" cols="33" rows="3" placeholder="indique la dirección..."></textarea>
 
 				<br><br>
+
 					<!-- radio buttons  -->
 				<label for="culm">¿Culminó? :</label>
 				<input type="radio" name="culm" id="si">
@@ -149,8 +155,8 @@
 
 				<input type="submit" value="Enviar">
 
-
 			</form>
+
 		</article>
 		
 	</section>
